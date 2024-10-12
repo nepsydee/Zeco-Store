@@ -56,200 +56,106 @@ display: flex;
  }
 
 
-  @media (max-width: 412px) {
-    .shoe img,
-    .shoee img,
-    .shoes img {
-      display: flex;
-      width: 85px;
-      max-width: 100%; /* Ensure images don't exceed container width */
-      margin: 0 auto; /* Center-align the images */
-      transition: 0.3s ease;
-      border: 2px transparent;
-    }
-  
-    .shoe img:hover,
-    .shoee img:hover,
-    .shoes img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 20px 2px rgb(217, 0, 255);
-      border: 2px solid rgb(217, 0, 255);
-    }
-  
-    .shoee img {
-      width: 95px;
-    }
-  
-    .shoee img:hover {
-      box-shadow: 0px 0px 20px 2px rgb(255, 191, 0);
-      border: 2px solid rgb(255, 191, 0);
-    }
-  
-    .shoes img {
-      width: 80px;
-    }
-  
-    .shoes img:hover {
-      transform: scale(1.5);
-      box-shadow: 0px 0px 20px 2px rgb(0, 225, 255);
-      border: 2px solid rgb(0, 225, 255);
-    }
-  
-    div p {
-      font-size:5px; /* Add 'px' to the font size value */
-      width: 200%; /* Adjust width to fit the container */
-      margin-top: 20px;
-      margin-left: -100px; /* Adjust the margin-top as needed */
-      text-align: center; /* Center-align the text */
-    
-    }
+/* Responsive Media Queries */
+@media (max-width: 912px) {
+  /* Stack images vertically on medium screens */
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .shoe img, .shoee img, .shoes img {
+      width: 260px; /* Slightly smaller images */
+      margin-bottom: 15px; /* Space between stacked images */
+      align-items: center;
+      margin: auto;
+      margin-bottom: 5px;
+  }
+  p {
+    margin-bottom: 20px;
+      font-size: 8px; /* Smaller footer text on small devices */
+  }
+}
+
+@media (max-width: 768px) {
+  .shoe img .shoee img, .shoes img {
+      width: 220px;
+      margin: auto;
+      margin-bottom: -20px;
+
+  }
+  p {
+    margin-bottom: 20px;
+      font-size: 6px; /* Smaller footer text on small devices */
+  }
+}
+@media (max-width: 740px) {
+  .shoe img .shoee img, .shoes img {
+      width: 220px;
+      margin: auto;
+      margin-bottom: -20px;
+
+  }
+  p {
+    margin-bottom: 20px;
+      font-size: 6px; /* Smaller footer text on small devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .shoe img, .shoee img, .shoes img {
+      width: 180px; /* Small images for very small devices */
+      margin-bottom: 10px;
+      margin: auto;
+      margin-bottom: -20px;
+  }
+  p {
+    margin-bottom: 20px;
+      font-size: 5px; /* Smaller footer text on small devices */
+  }
+}
+@media (max-width: 425px) {
+  .shoe img, .shoee img, .shoes img{
+      width: 170px; /* Small images for very small devices */
+      margin-bottom: 10px;
+      margin: auto;
+      margin-bottom: -20px;
   }
 
-  @media (max-width: 390px) {
-    .shoe img,
-    .shoee img,
-    .shoes img {
-      display: flex;
-      width: 85px;
-      max-width: 100%; /* Ensure images don't exceed container width */
-      margin: 0 auto; /* Center-align the images */
-      transition: 0.3s ease;
-      border: 2px transparent;
+p {
+  margin-bottom: 20px;
+    font-size: 5px; /* Smaller footer text on small devices */
+}
+}
+  @media (max-width: 350px) {
+    .shoe img, .shoee img, .shoes img{
+        width: 150px; /* Small images for very small devices */
+        margin-bottom: 10px;
+        margin: auto;
+        margin-bottom: -20px;
     }
-  
-    .shoe img:hover,
-    .shoee img:hover,
-    .shoes img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 20px 2px rgb(217, 0, 255);
-      border: 2px solid rgb(217, 0, 255);
-    }
-  
-    .shoee img {
-      width: 95px;
-    }
-  
-    .shoee img:hover {
-      box-shadow: 0px 0px 20px 2px rgb(255, 191, 0);
-      border: 2px solid rgb(255, 191, 0);
-    }
-  
-    .shoes img {
-      width: 80px;
-    }
-  
-    .shoes img:hover {
-      transform: scale(1.5);
-      box-shadow: 0px 0px 20px 2px rgb(0, 225, 255);
-      border: 2px solid rgb(0, 225, 255);
-    }
-  
-    div p {
-      font-size:5px; /* Add 'px' to the font size value */
-      width: 200%; /* Adjust width to fit the container */
-      margin-top: 20px;
-      margin-left: -100px; /* Adjust the margin-top as needed */
-      text-align: center; /* Center-align the text */
-    
-    }
-  }
-  
 
-  @media (max-width: 912px) {
-    .shoe img,
-    .shoee img,
-    .shoes img {
-      display: flex;
-      width: 290px;
-      max-width: 100%; /* Ensure images don't exceed container width */
-      margin: 0 auto; /* Center-align the images */
-      transition: 0.3s ease;
-      border: 2px transparent;
-    }
-  
-    .shoe img:hover,
-    .shoee img:hover,
-    .shoes img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 20px 2px rgb(217, 0, 255);
-      border: 2px solid rgb(217, 0, 255);
-    }
-  
-    .shoee img {
-      width: 310px;
-    }
-  
-    .shoee img:hover {
-      box-shadow: 0px 0px 20px 2px rgb(255, 191, 0);
-      border: 2px solid rgb(255, 191, 0);
-    }
-  
-    .shoes img {
-      width: 250px;
-    }
-  
-    .shoes img:hover {
-      transform: scale(1.5);
-      box-shadow: 0px 0px 20px 2px rgb(0, 225, 255);
-      border: 2px solid rgb(0, 225, 255);
-    }
-  
-    div p {
-      font-size:5px; /* Add 'px' to the font size value */
-      width: 200%; /* Adjust width to fit the container */
-      margin-top: 20px;
-      margin-left: -100px; /* Adjust the margin-top as needed */
-      text-align: center; /* Center-align the text */
-    
-    }
+  p {
+    margin-bottom: 20px;
+      font-size: 5px; /* Smaller footer text on small devices */
   }
+}
+@media (max-width: 320px) {
+  .shoe img .shoee img, .shoes img {
+      width: 120px;
+      margin: auto;
+      margin-bottom: -20px;
 
-  @media (max-width: 400px) {
-    .shoe img,
-    .shoee img,
-    .shoes img {
-      display: flex;
-      width: 85px;
-      max-width: 100%; /* Ensure images don't exceed container width */
-      margin: 0 auto; /* Center-align the images */
-      transition: 0.3s ease;
-      border: 2px transparent;
-    }
-  
-    .shoe img:hover,
-    .shoee img:hover,
-    .shoes img:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 0px 20px 2px rgb(217, 0, 255);
-      border: 2px solid rgb(217, 0, 255);
-    }
-  
-    .shoee img {
-      width: 95px;
-    }
-  
-    .shoee img:hover {
-      box-shadow: 0px 0px 20px 2px rgb(255, 191, 0);
-      border: 2px solid rgb(255, 191, 0);
-    }
-  
-    .shoes img {
-      width: 80px;
-    }
-  
-    .shoes img:hover {
-      transform: scale(1.5);
-      box-shadow: 0px 0px 20px 2px rgb(0, 225, 255);
-      border: 2px solid rgb(0, 225, 255);
-    }
-  
-    div p {
-      font-size:5px; /* Add 'px' to the font size value */
-      width: 200%; /* Adjust width to fit the container */
-      margin-top: 20px;
-      margin-left: -100px; /* Adjust the margin-top as needed */
-      text-align: center; /* Center-align the text */
-    
-    }
   }
+  p {
+    margin-bottom: 50px;
+      font-size: 5px; /* Smaller footer text on small devices */
+  }
+}
+/* Footer Text Styling */
+p {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+  
   
